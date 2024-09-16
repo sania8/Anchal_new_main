@@ -72,6 +72,11 @@
   background-color:rgb(254, 247, 191); 
   height: 23rem;
 }
+.work__img31{
+  padding: 20px; 
+  align-items: center; 
+  height: 18rem;
+}
 .work__img3{
   padding: 20px; 
   align-items: center; 
@@ -296,9 +301,6 @@ img {
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
-.about__img {
-  justify-self: center;
-}
 .about__img img {
   width: 200px;
   border-radius: 0.5rem;
@@ -386,8 +388,17 @@ img {
   overflow: hidden;
   transition: transform 0.5s ease; /* Adjust the transition duration and timing function */
 }
+.work__img31 {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.5s ease; /* Adjust the transition duration and timing function */
+}
 
 .work__img2:hover {
+  transform: scale(1.1); /* Apply the hover effect directly to the .work__img1 element */
+}
+.work__img31:hover {
   transform: scale(1.1); /* Apply the hover effect directly to the .work__img1 element */
 }
 
@@ -481,11 +492,6 @@ img {
   .home__img {
     width: 300px;
     bottom: 25%;
-  }
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: initial;
   }
 
   .skills__container {
